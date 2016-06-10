@@ -1,0 +1,32 @@
+﻿<Window x:Class="HomeLibrary.AddBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeLibrary"
+        mc:Ignorable="d"
+        Title="AddBook" Height="380" Width="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="TitleTextBox" HorizontalAlignment="Left" Height="23" Margin="152,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AuthorTextBox" HorizontalAlignment="Left" Height="23" Margin="152,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="YeraTextBox" HorizontalAlignment="Left" Height="23" Margin="152,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PagesTextBox" HorizontalAlignment="Left" Height="23" Margin="152,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="TitleLabel" Content="Title:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="91" Height="23"/>
+        <Label x:Name="AuthorLabel" Content="Author:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="91" Height="30"/>
+        <Label x:Name="YearLabel" Content="Year:" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="91" Height="30"/>
+        <Label x:Name="PagesLabel" Content="Pages:" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Width="91" Height="30"/>
+        <Label x:Name="ReadedLabel" Content="Readed:" HorizontalAlignment="Left" Margin="10,190,0,0" 
+               VerticalAlignment="Top" Width="91" Height="30" RenderTransformOrigin="0.54,2.164"/>
+        <Button x:Name="OkButton" Content="Ok" HorizontalAlignment="Left" Margin="106,312,0,0" 
+                VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.889,0.765" Click="OkButtonClick"/>
+        <ComboBox x:Name="ReadedComboBox" HorizontalAlignment="Left" Margin="152,190,0,0" 
+                  VerticalAlignment="Top" Width="120" SelectionChanged="ReadedComboBoxSelectionChanged" Loaded="ReadedComboBoxLoad"/>
+        <Label x:Name="PriorityLabel" Content="Priority:" HorizontalAlignment="Left" Margin="10,235,0,0" 
+               VerticalAlignment="Top" Width="91" Height="30" RenderTransformOrigin="0.54,2.164"/>
+        <Label x:Name="MarkLabel" Content="Mark:" HorizontalAlignment="Left" Margin="201,235,0,0" 
+               VerticalAlignment="Top" Width="91" Height="30" RenderTransformOrigin="0.54,2.164"/>
+        <ComboBox x:Name="PriorityComboBox" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" Width="62" Loaded="PriorityComboBoxLoad"/>
+        <ComboBox x:Name="MarkComboBox" HorizontalAlignment="Left" Margin="201,270,0,0" VerticalAlignment="Top" Width="62" Loaded="MarkComboBoxLoad"/>
+    </Grid>
+</Window>
